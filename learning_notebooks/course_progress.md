@@ -1,0 +1,71 @@
+
+### MODULE 0 START (TensorFlow/deep learning fundamentals)
+- What is deep learning?
+- Why use deep learning?
+- What are neural networks?
+- What is deep learning actually used for?
+- What is and why use TensorFlow?
+- What is a tensor?
+- What we're going to cover
+- How to approach this course(Till here)
+- Creating our first tensors with TensorFlow
+- Creating tensors with tf Variable
+- Creating random tensors
+- Shuffling the order of tensors
+- Creating tensors from NumPy arrays
+- Getting information from our tensors
+- Indexing and expanding tensors
+- Manipulating tensors with basic operations
+- Matrix multiplication part 1
+- Matrix multiplication part 2
+- Matrix multiplication part 3
+- Changing the datatype of tensors
+- Aggregating tensors
+- Tensor troubleshooting
+- Find the positional min and max of a tensor
+- Squeezing a tensor
+- One-hot encoding tensors
+- Trying out more tensor math operations
+- Using TensorFlow with NumPy
+
+### MODULE 1 START (neural network regression)
+- Intro to neural network regression with TensorFlow
+- Inputs and outputs of a regression model
+- Architecture of a neural network regression model
+- Creating sample regression data
+- Steps in modelling with TensorFlow
+- Steps in improving a model part 1
+- Steps in improving a model part 2
+- Steps in improving a model part 3
+- Evaluating a model part 1 ("visualize, visualize, visualize")
+- Evaluating a model part 2 (the 3 datasets)
+- Evaluating a model part 3 (model summary)
+- Evaluating a model part 4 (visualizing layers)
+- Evaluating a model part 5 (visualizing predictions)
+- Evaluating a model part 6 (regression evaluation metrics)
+- Evaluating a regression model part 7 (MAE)
+- Evaluating a regression model part 8 (MSE)
+- Modelling experiments part 1 (start with a simple model)
+- Modelling experiments part 2 (increasing complexity)
+- Comparing and tracking experiments
+- Saving a model
+- Loading a saved model
+- Saving and downloading files from Google Colab
+- Putting together what we've learned 1 (preparing a dataset)
+- Putting together what we've learned 2 (building a regression model)
+- Putting together what we've learned 3 (improving our regression model)
+- Preprocessing data 1 (concepts)
+- Preprocessing data 2 (normalizing data)
+- Preprocessing data 3 (fitting a model on normalized data)
+
+### MODULE 2 START (neural network classification)
+- Introduction to neural network classification with TensorFlow
+- Classification inputs and outputs
+- Classification input and output tensor shapes
+- Typical architecture of a classification model
+- Creating and viewing classification data to model
+- Checking the input and output shapes of our classification data
+- Building a not very good classification model
+- Trying to improve our not very good classification model
+- Creating a function to visualize our model's not so good predictions
+- Making our poor classification model work for a regression dataset
