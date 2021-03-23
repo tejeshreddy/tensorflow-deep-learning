@@ -7,7 +7,7 @@ Before signing up to the full course, you can watch the first 14-hours of videos
 * [Part 1](https://youtu.be/tpCFfeUEGs8) contains notebooks 00, 01 and some of 02 (see below)
 * [Part 2](https://youtu.be/ZUKz4125WNI) starts where part 1 left off and finishes the rest of 02
 
-Otherwise, enjoy the contents of this page:
+## Contents of this page
 - [Course materials](https://github.com/mrdbourke/tensorflow-deep-learning#course-materials) (everything you'll need for completing the course)
 - [Course structure](https://github.com/mrdbourke/tensorflow-deep-learning#course-structure) (how this course is taught)
 - [Should you do this course?](https://github.com/mrdbourke/tensorflow-deep-learning#should-you-do-this-course) (decide by answering a couple simple questions)
@@ -39,10 +39,10 @@ Key:
 | 04 | [Transfer Learning Part 1: Feature extraction](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/04_transfer_learning_in_tensorflow_part_1_feature_extraction.ipynb) | [`10_food_classes_10_percent`](https://storage.googleapis.com/ztm_tf_course/food_vision/10_food_classes_10_percent.zip) | [Go to exercises & extra-curriculum](https://github.com/mrdbourke/tensorflow-deep-learning#-04-transfer-learning-in-tensorflow-part-1-feature-extraction-exercises) | [Go to slides](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/slides/04_transfer_learning_with_tensorflow_part_1_feature_extraction.pdf) |
 | 05 | [Transfer Learning Part 2: Fine-tuning](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/05_transfer_learning_in_tensorflow_part_2_fine_tuning.ipynb) | [`10_food_classes_10_percent`](https://storage.googleapis.com/ztm_tf_course/food_vision/10_food_classes_10_percent.zip), [`10_food_classes_1_percent`](https://storage.googleapis.com/ztm_tf_course/food_vision/10_food_classes_1_percent.zip), [`10_food_classes_all_data`](https://storage.googleapis.com/ztm_tf_course/food_vision/10_food_classes_all_data.zip) | [Go to exercises & extra-curriculum](https://github.com/mrdbourke/tensorflow-deep-learning#-05-transfer-learning-in-tensorflow-part-2-fine-tuning-exercises) | [Go to slides](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/slides/05_transfer_learning_with_tensorflow_part_2_fine_tuning.pdf) |
 | 06 | [Transfer Learning Part 3: Scaling up](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/06_transfer_learning_in_tensorflow_part_3_scaling_up.ipynb) | [`101_food_classes_10_percent`](https://storage.googleapis.com/ztm_tf_course/food_vision/101_food_classes_10_percent.zip), [`custom_food_images`](https://storage.googleapis.com/ztm_tf_course/food_vision/custom_food_images.zip), [`fine_tuned_efficientnet_model`](https://storage.googleapis.com/ztm_tf_course/food_vision/06_101_food_class_10_percent_saved_big_dog_model.zip) | [Go to exercises & extra-curriculum](https://github.com/mrdbourke/tensorflow-deep-learning#-06-transfer-learning-in-tensorflow-part-3-scaling-up-exercises) | [Go to slides](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/slides/06_transfer_learning_with_tensorflow_part_3_scaling_up.pdf) |
-| 07 | Milestone project 1: Food Vision (coming soon) |  | |  |
+| 07 | [Milestone Project 1: 🍔👁 Food Vision](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/07_food_vision_milestone_project_1.ipynb), [Template (your challenge)](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/extras/TEMPLATE_07_food_vision_milestone_project_1.ipynb) | [`feature_extraction_mixed_precision_efficientnet_model`](https://storage.googleapis.com/ztm_tf_course/food_vision/07_efficientnetb0_feature_extract_model_mixed_precision.zip), [`fine_tuned_mixed_precision_efficientnet_model`](https://storage.googleapis.com/ztm_tf_course/food_vision/07_efficientnetb0_fine_tuned_101_classes_mixed_precision.zip) | [Go to exercises & extra-curriculum](https://github.com/mrdbourke/tensorflow-deep-learning#-07-milestone-project-1--food-vision-big-exercises) | |
 | 08 | TensorFlow NLP Fundamentals (coming soon) |  |  |  |
-| 09 | Milestone project 2: SkimLit (coming soon) |  |  |  |
-| 10 | TensorFlow Time Series Fundamentals & Milestone project 3 (coming soon) | | | |
+| 09 | Milestone Project 2: SkimLit (coming soon) |  |  |  |
+| 10 | TensorFlow Time Series Fundamentals & Milestone Project 3 (coming soon) | | | |
 
 ## Course structure
 
@@ -226,6 +226,25 @@ To prevent the course from being 100+ hours (deep learning is a broad field), va
 
 ---
 
+### 🛠 07 Milestone Project 1: 🍔👁 Food Vision Big™ Exercises
+
+**Note:** The chief exercise for Milestone Project 1 is to finish the "TODO" sections in the [Milestone Project 1 Template notebook](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/extras/TEMPLATE_07_food_vision_milestone_project_1.ipynb). After doing so, move onto the following.
+
+1. Use the same evaluation techniques on the large-scale Food Vision model as you did in the previous notebook ([Transfer Learning Part 3: Scaling up](https://github.com/mrdbourke/tensorflow-deep-learning/blob/main/06_transfer_learning_in_tensorflow_part_3_scaling_up.ipynb)). More specifically, it would be good to see:
+  * A confusion matrix between all of the model's predictions and true labels.
+  * A graph showing the f1-scores of each class.
+  * A visualization of the model making predictions on various images and comparing the predictions to the ground truth.
+    * For example, plot a sample image from the test dataset and have the title of the plot show the prediction, the prediction probability and the ground truth label. 
+2. Take 3 of your own photos of food and use the Food Vision model to make predictions on them. How does it go? Share your images/predictions with the other students.
+3. Retrain the model (feature extraction and fine-tuning) we trained in this notebook, except this time use [`EfficientNetB4`](https://www.tensorflow.org/api_docs/python/tf/keras/applications/EfficientNetB4) as the base model instead of `EfficientNetB0`. Do you notice an improvement in performance? Does it take longer to train? Are there any tradeoffs to consider?
+4. Name one important benefit of mixed precision training, how does this benefit take place?
+
+### 📖 07 Milestone Project 1: 🍔👁 Food Vision Big™ Extra-curriculum
+
+* Read up on learning rate scheduling and the [learning rate scheduler callback](https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/LearningRateScheduler). What is it? And how might it be helpful to this project?
+* Read up on TensorFlow data loaders ([improving TensorFlow data loading performance](https://www.tensorflow.org/guide/data_performance)). Is there anything we've missed? What methods you keep in mind whenever loading data in TensorFlow? Hint: check the summary at the bottom of the page for a gret round up of ideas.
+* Read up on the documentation for [TensorFlow mixed precision training](https://www.tensorflow.org/guide/mixed_precision). What are the important things to keep in mind when using mixed precision training?
+
 ## What this course is missing
 
 Deep learning is a broad topic. So this course doesn't cover it all. 
@@ -241,15 +260,15 @@ Here are some of the main topics you might want to look into next:
 
 Contact [Daniel Bourke](mailto:daniel@mrdbourke.com) or [add a discussion](https://github.com/mrdbourke/tensorflow-deep-learning/discussions) (preferred).
 
-# Status
+## Status
 
-As of: 17 Mar 2021 - LAUNCHED! 
+As of: 23 Mar 2021 - LAUNCHED! 
 
-* **Currently:** Preparing slides & notebook for 07 (livestreaming lots of this on Twitch: https://www.twitch.tv/mrdbourke)
-* **Video count:** 182/~220+, aiming to do ~10 videos per day during recording sessions
+* **Currently:** Recording videos for 07
+* **Video count:** 188/~220+, aiming to do ~10 videos per day during recording sessions
 * Finished videos for: 00, 01, 02, 03, 04, 05, 06
-* Finished slides for notebooks: 00, 01, 02, 03, 04, 05, 06
-* Polished (prepared them for external use) notebooks: 00, 01, 02, 03, 04, 05, 06
+* Finished slides for notebooks: 00, 01, 02, 03, 04, 05, 06, 07
+* Polished (prepared them for external use) notebooks: 00, 01, 02, 03, 04, 05, 06, 07 (livestreaming lots of this on Twitch: https://www.twitch.tv/mrdbourke)
 * Finished 09/10 of code notebooks (time series still to come)
 * Video studio setup! ([see the makeshift closet studio](https://raw.githubusercontent.com/mrdbourke/tensorflow-deep-learning/main/images/misc-studio-setup.jpeg))
 * Created GitHub Project page! See a cool Kanban setup here: https://github.com/mrdbourke/tensorflow-deep-learning/projects/1
@@ -270,6 +289,8 @@ geez... I forgot how much there was still to go... classic project planning
 * Upload solutions for exercises (probably livestream the creation of these after course launch)
   
 ## Log
+* 23 Mar 2021 - Recorded 6 videos for 07 (finally), going to finish tomorrow
+* 22 Mar 2021 - Polished notebook 07 ready for recording, made slides for 07, added template for 07 (for a student to go through and practice), ready to record!
 * 17 Mar 2021 - 99% finished notebook 07, added links to first 14 hours of the course on YouTube ([10 hours in part 1](https://youtu.be/tpCFfeUEGs8), [4 hours in part 2](https://youtu.be/ZUKz4125WNI))
 * 11 Mar 2021 - added even more text annotations to notebook 07, finishing tomorrow, then slides
 * 10 Mar 2021 - Typed a whole bunch of explanations into notebook 07, continuing tomorrow
