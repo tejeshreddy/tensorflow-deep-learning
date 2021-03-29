@@ -7,7 +7,7 @@
 - What is and why use TensorFlow?
 - What is a tensor?
 - What we're going to cover
-- How to approach this course(Till here)
+- How to approach this course
 - Creating our first tensors with TensorFlow
 - Creating tensors with tf Variable
 - Creating random tensors
